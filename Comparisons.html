@@ -19,16 +19,7 @@
 
     <link rel="stylesheet" href="style.css">
     <style>
-        img {
-            float: left;
-            margin-right: 20px;
-        }
 
-        img.thumbnail {
-            float: left;
-            margin-right: 10px;
-            width: 185px;
-        }
     </style>
 </head>
 
@@ -39,6 +30,7 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto navbar-right">
                 <li class="nav-item dropdown">
@@ -55,7 +47,8 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Comparisons.html">Comparison <span class="sr-only">(current)</span></a>
+                    <a class="nav-link active" href="Comparisons.html">Comparison <span
+                            class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Data.html">Data</a>
@@ -65,26 +58,24 @@
     </nav>
     <div class="container">
         <div class="jumbotron" style="overflow:auto">
-            <div style="float: left; width:600px">
-                <h1 class="display-5">Summary: Lattitude vs. X</h1>
-                <img src="images/Lattitude_vs.max_temperature.png" alt="Max Temperature" width="300">
-                <p class="lead">The purpose of this project was to analyze how weather changes as you get closer to the
-                    equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a
-                    dataset on over 500 cities.
-                    After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs.
-                    latitude. Factors we looked at included: temperature, cloudiness, humidity, and wind speed. This
-                    site provides the source data and visualizations created as part of the analysis, as well as
-                    explanations and descriptions of any trends and correlations witnessed.
-                </p>
+            <h1 class="display-3">Comaprisons: Lattitude vs X</h1>
+            <p class="lead">Click any plot to get an in-depth analysis.</p>
+            <div style="width:450px; margin:20px; float:left;">
+                <h1 class="display-6">vs. Max Temperature</h1>
+                <img src="images/Lattitude_vs.max_temperature.png" alt="Max Temperature" width="450px">
             </div>
-            <div style="margin-left:30px; width: 400px; float: left;">
-                <h1 class="display-6">Visualizations</h1>
-                <img class="thumbnail" src="images/Lattitude_vs.max_temperature.png" alt="Max Temperature">
-                <img class="thumbnail" src="images/Lattitude_vs.humidity.png" alt="Max Temperature">
-                <img class="thumbnail" src="images/Lattitude_vs.cloudiness.png" alt="Max Temperature" width="450px">
-                <img class="thumbnail" src="images/Lattitude_vs._wind_speed.png" alt="Max Temperature" width="450px">
+            <div style="width:450px; margin:20px; float:left;">
+                <h1 class="display-6">vs.Humidity</h1>
+                <img src="images/Lattitude_vs.humidity.png" alt="Max Temperature" width="450px">
             </div>
-            <div style="clear:both"></div>
+            <div style="width:450px; margin:20px; float:left;">
+                <h1 class="display-6">vs.Cloudiness</h1>
+                <img src="images/Lattitude_vs.cloudiness.png" alt="Max Temperature" width="450px">
+            </div>
+            <div style="width:450px; margin:20px; float:left;">
+                <h1 class="display-6">vs.Wind Speed</h1>
+                <img src="images/Lattitude_vs._wind_speed.png" alt="Max Temperature" width="450px">
+            </div>
         </div>
     </div>
 </body>
